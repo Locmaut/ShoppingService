@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Domino</string>
+    <string name="entrance_greetings">Hello!</string>
+    <string name="entrance_greetings_description">Do you already have a Domino account?</string>
+    <string name="sign_up">Sign up</string>
+    <string name="log_in">Log in</string>
+    <string name="login">Login</string>
+    <string name="login_phone_email">Phone number or email</string>
+    <string name="password">Password</string>
+    <string name="login_forgot_your_password">Forgot your password?</string>
+    <string name="or">or</string>
+    <string name="continue_with_google">Continue with Google</string>
+    <string name="registration">Registration</string>
+    <string name="your_name">Your name</string>
+    <string name="phone_number">Phone number</string>
+    <string name="email">E-mail</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="registration_description">By creating an account, you agree to the </string>
+    <string name="registration_description_link">Terms of Use</string>
+    <string name="news_and_promotions">Receive information about news and promotions</string>
+    <string name="create_account">Create account</string>
+    <string name="categories">Categories</string>
+    <string name="premium_ads">Premium ads</string>
+    <string name="main">Main</string>
+    <string name="desired">Desired</string>
+    <string name="create">Create</string>
+    <string name="search">Search</string>
+    <string name="profile">Profile</string>
+
+    <string name="business_and_services">Business and services</string>
+    <string name="free">Free</string>
+    <string name="children_world">Children world</string>
+    <string name="home_and_garden">Home and garden</string>
+    <string name="help">Help</string>
+    <string name="electronic">Electronic</string>
+    <string name="beauty_and_health">Beauty and health</string>
+    <string name="fashion_and_style">Fashion and style</string>
+    <string name="real_estate">Real estate</string>
+    <string name="work">Work</string>
+    <string name="animal">Animal</string>
+    <string name="transport">Transport</string>
+    <string name="hobby">Hobby</string>
+
+    <string name="title">Title</string>
+    <string name="city">City</string>
+    <string name="date">Date</string>
+    <string name="price">Price</string>
+
+
+</resources>

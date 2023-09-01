@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Domino</string>
+    <string name="main">Головна</string>
+    <string name="desired">Бажане</string>
+    <string name="create">Створити</string>
+    <string name="search">Пошук</string>
+    <string name="profile">Профіль</string>
+</resources>
