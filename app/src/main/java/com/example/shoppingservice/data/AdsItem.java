@@ -2,7 +2,7 @@ package com.example.shoppingservice.data;
 
 import java.time.LocalDateTime;
 
-public class Ads {
+public class AdsItem {
     private int iconAdsId;
     private String title;
     private String city;
@@ -11,7 +11,7 @@ public class Ads {
     private int iconPremiumId;
     private int iconDesiredId;
 
-    public Ads(int iconId, String title, String city, LocalDateTime date, int price, int iconPremiumId, int iconDesiredId) {
+    public AdsItem(int iconId, String title, String city, LocalDateTime date, int price, int iconPremiumId, int iconDesiredId) {
         this.iconAdsId = iconId;
         this.title = title;
         this.city = city;
@@ -20,7 +20,7 @@ public class Ads {
         this.iconPremiumId = iconPremiumId;
         this.iconDesiredId = iconDesiredId;
     }
-    public Ads(int iconId, String title, String city, LocalDateTime date, int price,  int iconDesiredId) {
+    public AdsItem(int iconId, String title, String city, LocalDateTime date, int price, int iconDesiredId) {
         this.iconAdsId = iconId;
         this.title = title;
         this.city = city;

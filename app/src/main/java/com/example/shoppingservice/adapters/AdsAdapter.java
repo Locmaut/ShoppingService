@@ -1,6 +1,5 @@
 package com.example.shoppingservice.adapters;
 
-import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,19 +10,18 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.shoppingservice.R;
-import com.example.shoppingservice.data.Ads;
+import com.example.shoppingservice.data.AdsItem;
 
 import java.time.format.DateTimeFormatter;
 import java.util.List;
 
 public class AdsAdapter extends RecyclerView.Adapter<AdsAdapter.AdsHolder> {
 
-    Context context;
-    List<Ads> adsList;
 
-    public AdsAdapter(Context context, List<Ads> adsList) {
-        this.context = context;
-        this.adsList = adsList;
+    List<AdsItem> adsItemList;
+
+    public AdsAdapter(List<AdsItem> adsItemList) {
+        this.adsItemList = adsItemList;
     }
 
     @NonNull
@@ -35,20 +33,20 @@ public class AdsAdapter extends RecyclerView.Adapter<AdsAdapter.AdsHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull AdsHolder holder, int position) {
-        Ads ads = adsList.get(position);
-        holder.iconAds.setImageResource(ads.getIconAdsId());
-        holder.title.setText(ads.getTitle());
-        holder.city.setText(ads.getCity());
-        holder.date.setText(ads.getDate().format(DateTimeFormatter.ISO_DATE));
-        holder.price.setText(String.valueOf(ads.getPrice()));
-        holder.iconPremium.setImageResource(ads.getIconPremiumId());
-        holder.iconDesired.setImageResource(ads.getIconDesiredId());
+        AdsItem adsItem = adsItemList.get(position);
+        holder.iconAds.setImageResource(adsItem.getIconAdsId());
+        holder.title.setText(adsItem.getTitle());
+        holder.city.setText(adsItem.getCity());
+        holder.date.setText(adsItem.getDate().format(DateTimeFormatter.ISO_DATE));
+        holder.price.setText(String.valueOf(adsItem.getPrice()));
+        holder.iconPremium.setImageResource(adsItem.getIconPremiumId());
+        holder.iconDesired.setImageResource(adsItem.getIconDesiredId());
 
     }
 
     @Override
     public int getItemCount() {
-        return adsList.size();
+        return adsItemList.size();
     }
 
     public class AdsHolder extends RecyclerView.ViewHolder {
@@ -66,7 +64,7 @@ public class AdsAdapter extends RecyclerView.Adapter<AdsAdapter.AdsHolder> {
             city = itemView.findViewById(R.id.textView_city_ads);
             date = itemView.findViewById(R.id.textView_date_ads);
             price = itemView.findViewById(R.id.textView_price_ads);
-            iconPremium = itemView.findViewById(R.id.imageView_premium_ads);
+            iconPremium = itemView.findViewById(R.id.imageView_icon_premium_ads);
             iconDesired = itemView.findViewById(R.id.imageView_desired_ads);
         }
     }

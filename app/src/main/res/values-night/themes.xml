@@ -2,15 +2,20 @@
     <!-- Base application theme. -->
     <style name="Theme.ShoppingService" parent="Theme.Material3.DayNight.NoActionBar">
 
-        <item name="background">@color/black</item>
         <item name="colorPrimary">@color/grey_black</item>
-        <item name="colorSecondary">@color/grey</item> <!--акценты-->
-
-
+       <!-- <item name="android:background">@color/grey</item>
+        <item name="android:textColorPrimary">@color/white</item>-->
         <item name="colorOnPrimary">@color/white</item> <!--цвет в кнопке-->
 
+    </style>
 
+        <!--<style name="ThemeOverlay.AppCompat.navTheme">
+            <item name="colorPrimary">@color/grey_black</item>
+        </style>-->
+
+
+        <!--<item name="colorSecondary">@color/grey</item> &lt;!&ndash;акценты&ndash;&gt;-->
         <!--<item name="android:textColorPrimary">@color/white</item>
         <item name="android:strokeColor">@color/white</item>-->
-    </style>
+
 </resources>

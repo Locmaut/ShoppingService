@@ -1,14 +1,14 @@
 package com.example.shoppingservice.data;
 
-public class Main {
+public class CategoriesItem {
     private int iconId;
     private String title;
-    private String tag;
 
-    public Main(int iconId, String title, String tag) {
+
+    public CategoriesItem(int iconId, String title) {
         this.iconId = iconId;
         this.title = title;
-        this.tag = tag;
+
     }
 
     public int getIconId() {
@@ -27,11 +27,4 @@ public class Main {
         this.title = title;
     }
 
-    public String getTag() {
-        return tag;
-    }
-
-    public void setTag(String tag) {
-        this.tag = tag;
-    }
 }

@@ -53,7 +53,7 @@
         android:layout_marginTop="10dp"
 
         android:layout_marginRight="16dp"
-        android:background="@drawable/edit_text"
+        android:background="@drawable/edit_text_background"
         android:fontFamily="@font/roboto_medium"
         android:inputType="text|textPersonName"
         android:maxLength="25"
@@ -93,7 +93,7 @@
         android:layout_marginLeft="16dp"
         android:layout_marginTop="10dp"
         android:layout_marginRight="16dp"
-        android:background="@drawable/edit_text"
+        android:background="@drawable/edit_text_background"
         android:fontFamily="@font/roboto_medium"
         android:inputType="number|numberSigned"
         android:maxLength="12"
@@ -133,7 +133,7 @@
         android:layout_marginLeft="16dp"
         android:layout_marginTop="10dp"
         android:layout_marginRight="16dp"
-        android:background="@drawable/edit_text"
+        android:background="@drawable/edit_text_background"
         android:fontFamily="@font/roboto_medium"
 
         android:inputType="text|textEmailAddress"
@@ -173,7 +173,7 @@
         android:layout_marginLeft="16dp"
         android:layout_marginTop="10dp"
         android:layout_marginRight="16dp"
-        android:background="@drawable/edit_text"
+        android:background="@drawable/edit_text_background"
 
         android:fontFamily="@font/roboto_medium"
         android:inputType="text|textPassword"
@@ -214,7 +214,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginRight="16dp"
 
-        android:background="@drawable/edit_text"
+        android:background="@drawable/edit_text_background"
         android:fontFamily="@font/roboto_medium"
         android:inputType="text|textPassword"
         android:keepScreenOn="false"
@@ -292,15 +292,9 @@
             android:id="@+id/checkBox_reg_news_promotions"
             android:layout_width="24dp"
             android:layout_height="24dp"
-
-
-            android:background="@drawable/btn_checkbox_background"
             android:backgroundTint="@color/grey_black"
-            android:button="@drawable/btn_checkbox"
             android:checked="false"
-            android:gravity="center"
-            android:hapticFeedbackEnabled="false"
-            android:includeFontPadding="false" />
+            android:gravity="center" />
 
         <TextView
             android:id="@+id/textView_reg_news_promotions"
@@ -329,7 +323,6 @@
         android:textSize="14sp"
         app:cornerRadius="13sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout_checkbox" />
 
