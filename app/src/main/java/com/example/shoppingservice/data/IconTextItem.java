@@ -1,11 +1,9 @@
 package com.example.shoppingservice.data;
 
-public class CategoriesItem {
+public class IconTextItem {
     private int iconId;
     private String title;
-
-
-    public CategoriesItem(int iconId, String title) {
+    public IconTextItem(int iconId, String title) {
         this.iconId = iconId;
         this.title = title;
 

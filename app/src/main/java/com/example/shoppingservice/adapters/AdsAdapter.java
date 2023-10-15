@@ -1,5 +1,6 @@
 package com.example.shoppingservice.adapters;
 
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,6 +10,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.shoppingservice.AdsPageActivity;
 import com.example.shoppingservice.R;
 import com.example.shoppingservice.data.AdsItem;
 
@@ -42,6 +44,10 @@ public class AdsAdapter extends RecyclerView.Adapter<AdsAdapter.AdsHolder> {
         holder.iconPremium.setImageResource(adsItem.getIconPremiumId());
         holder.iconDesired.setImageResource(adsItem.getIconDesiredId());
 
+        holder.itemView.setOnClickListener(v -> {
+            Intent intent = new Intent(v.getContext(), AdsPageActivity.class);
+            v.getContext().startActivity(intent);
+        });
     }
 
     @Override
@@ -60,7 +66,7 @@ public class AdsAdapter extends RecyclerView.Adapter<AdsAdapter.AdsHolder> {
         public AdsHolder(@NonNull View itemView) {
             super(itemView);
             iconAds = itemView.findViewById(R.id.imageView_icon_ads);
-            title = itemView.findViewById(R.id.textView_title_ads);
+            title = itemView.findViewById(R.id.textView_create_ads_title);
             city = itemView.findViewById(R.id.textView_city_ads);
             date = itemView.findViewById(R.id.textView_date_ads);
             price = itemView.findViewById(R.id.textView_price_ads);

@@ -49,4 +49,33 @@
     <string name="select_category">Select a category</string>
     <string name="filters">Filters</string>
     <string name="ads">Ads</string>
+    <string name="found_ads">Found of ads</string>
+
+    <string name="all_ukraine">All Ukraine</string>
+    <string name="first_new">First new</string>
+    <string name="create_ads">Create ads</string>
+    <string name="upload_photos">Upload photos</string>
+    <string name="ads_title">Ads title</string>
+    <string name="description">Description</string>
+    <string name="specify_price">Specify the price</string>
+    <string name="contractual">Contractual</string>
+    <string name="your_city">Your city</string>
+    <string name="contact_person">Contact person</string>
+    <string name="phone">Phone</string>
+    <string name="preview">Preview</string>
+    <string name="publish">Publish</string>
+    <string name="write">Write</string>
+    <string name="call">Call</string>
+
+    <string name="to_the_desired">To the desired</string>
+    <string name="complain">Complain</string>
+    <string name="share">Share</string>
+    <string name="condition">Condition: </string>
+    <string name="used">Used</string>
+    <string name="new_condition">New</string>
+    <string name="seller">Seller</string>
+    <string name="name">Name</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>

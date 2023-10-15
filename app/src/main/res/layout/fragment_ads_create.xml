@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdsCreateFragment">
+
+    <Button
+        android:id="@+id/button_create_ads"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/back_40px"
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="center|start"
+        android:padding="0dp"
+        android:text="@string/create_ads"
+        android:textSize="20sp"
+
+        app:iconPadding="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/nestedScrollView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_create_ads">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/button_create_ads_upload_photos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
+                android:fontFamily="@font/roboto_medium"
+                android:foreground="@drawable/button_white_stroke_foreground"
+                android:text="@string/upload_photos"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView_create_ads_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/ads_title"
+                android:textAlignment="viewStart"
+                android:textColor="@color/grey"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText_create_ads_title"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/corners_radius_background"
+                android:fontFamily="@font/roboto_medium"
+                android:inputType="text|textPersonName"
+                android:maxLength="40"
+                android:paddingLeft="20sp"
+                android:singleLine="true"
+                android:textAlignment="viewStart"
+                android:textColor="@color/grey"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView_create_ads_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/description"
+                android:textAlignment="viewStart"
+                android:textColor="@color/grey"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText_create_ads_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/corners_radius_background"
+                android:fontFamily="@font/roboto_medium"
+                android:inputType="text|textPersonName|textMultiLine"
+                android:maxLength="400"
+                android:minHeight="40dp"
+                android:paddingLeft="20sp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/grey"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView_create_ads_specify_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/specify_price"
+                android:textAlignment="viewStart"
+                android:textColor="@color/grey"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText_create_ads_specify_price"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+
+                android:background="@drawable/corners_radius_background"
+                android:fontFamily="@font/roboto_medium"
+                android:inputType="number|numberSigned"
+                android:maxLength="10"
+                android:paddingLeft="20sp"
+                android:singleLine="true"
+                android:textAlignment="viewStart"
+                android:textColor="@color/grey"
+                android:textSize="12sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox_create_ads_contractual"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/roboto_medium"
+                android:paddingVertical="0dp"
+                android:text="@string/contractual"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/button_create_ads_select_category"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/transparent"
+                android:drawableRight="@drawable/arrow_18px"
+                android:fontFamily="@font/roboto_medium"
+                android:gravity="center|start"
+                android:padding="0dp"
+
+                android:text="@string/select_category"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/button_create_ads_your_city"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/transparent"
+                android:drawableRight="@drawable/arrow_18px"
+                android:fontFamily="@font/roboto_medium"
+                android:gravity="center|start"
+                android:padding="0dp"
+                android:text="@string/your_city"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView_create_ads_contact_person"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/contact_person"
+                android:textAlignment="viewStart"
+
+                android:textColor="@color/grey"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText_create_ads_contact_person"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/corners_radius_background"
+                android:fontFamily="@font/roboto_medium"
+                android:inputType="text|textPersonName"
+                android:maxLength="40"
+                android:paddingLeft="20sp"
+                android:singleLine="true"
+                android:textAlignment="viewStart"
+                android:textColor="@color/grey"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView_create_ads_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/phone"
+                android:textAlignment="viewStart"
+                android:textColor="@color/grey"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText_create_ads_phone"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/corners_radius_background"
+                android:fontFamily="@font/roboto_medium"
+                android:inputType="phone"
+                android:maxLength="14"
+                android:paddingLeft="20sp"
+                android:singleLine="true"
+                android:textAlignment="viewStart"
+
+                android:textColor="@color/grey"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/button_create_ads_preview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+
+                android:backgroundTint="@color/black"
+                android:fontFamily="@font/roboto_medium"
+                android:foreground="@drawable/button_white_stroke_foreground"
+                android:text="@string/preview"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/button_create_ads_publish"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="@color/green"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/publish"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:cornerRadius="13sp" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

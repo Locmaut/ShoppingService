@@ -3,18 +3,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="?attr/background"
-    tools:context=".RegistrationActivity">
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    tools:context=".RegistrationFragment">
 
     <TextView
         android:id="@+id/textView_registration"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-
-        android:layout_marginLeft="16sp"
         android:layout_marginTop="50dp"
-        android:layout_marginRight="16sp"
         android:fontFamily="@font/roboto_medium"
         android:text="@string/registration"
         android:textAlignment="center"
@@ -30,13 +27,9 @@
         android:id="@+id/textView_reg_your_name"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
         android:layout_marginTop="30dp"
-        android:layout_marginRight="16dp"
-
         android:fontFamily="@font/roboto_medium"
         android:text="@string/your_name"
-
         android:textAlignment="viewStart"
         android:textColor="@color/grey"
         android:textSize="12sp"
@@ -49,11 +42,8 @@
         android:id="@+id/editText_reg_your_name"
         android:layout_width="0dp"
         android:layout_height="40dp"
-        android:layout_marginLeft="16dp"
         android:layout_marginTop="10dp"
-
-        android:layout_marginRight="16dp"
-        android:background="@drawable/edit_text_background"
+        android:background="@drawable/corners_radius_background"
         android:fontFamily="@font/roboto_medium"
         android:inputType="text|textPersonName"
         android:maxLength="25"
@@ -71,11 +61,7 @@
         android:id="@+id/textView_reg_phone_number"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-
         android:layout_marginTop="10dp"
-
-        android:layout_marginRight="16dp"
         android:fontFamily="@font/roboto_medium"
         android:text="@string/phone_number"
         android:textAlignment="viewStart"
@@ -90,14 +76,11 @@
         android:id="@+id/editText_reg_phone_number"
         android:layout_width="0dp"
         android:layout_height="40dp"
-        android:layout_marginLeft="16dp"
         android:layout_marginTop="10dp"
-        android:layout_marginRight="16dp"
-        android:background="@drawable/edit_text_background"
+        android:background="@drawable/corners_radius_background"
         android:fontFamily="@font/roboto_medium"
         android:inputType="number|numberSigned"
         android:maxLength="12"
-
         android:paddingLeft="20sp"
         android:singleLine="true"
         android:textAlignment="viewStart"
@@ -112,10 +95,7 @@
         android:id="@+id/textView_reg_email"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-
         android:layout_marginTop="10dp"
-        android:layout_marginRight="16dp"
         android:fontFamily="@font/roboto_medium"
         android:text="@string/email"
         android:textAlignment="viewStart"
@@ -130,12 +110,9 @@
         android:id="@+id/editText_reg_email"
         android:layout_width="0dp"
         android:layout_height="40dp"
-        android:layout_marginLeft="16dp"
         android:layout_marginTop="10dp"
-        android:layout_marginRight="16dp"
-        android:background="@drawable/edit_text_background"
+        android:background="@drawable/corners_radius_background"
         android:fontFamily="@font/roboto_medium"
-
         android:inputType="text|textEmailAddress"
         android:maxLength="12"
         android:paddingLeft="20sp"
@@ -152,10 +129,7 @@
         android:id="@+id/textView_reg_password"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-
         android:layout_marginTop="10dp"
-        android:layout_marginRight="16dp"
         android:fontFamily="@font/roboto_medium"
         android:text="@string/password"
         android:textAlignment="viewStart"
@@ -170,11 +144,8 @@
         android:id="@+id/editText_reg_password"
         android:layout_width="0dp"
         android:layout_height="40dp"
-        android:layout_marginLeft="16dp"
         android:layout_marginTop="10dp"
-        android:layout_marginRight="16dp"
-        android:background="@drawable/edit_text_background"
-
+        android:background="@drawable/corners_radius_background"
         android:fontFamily="@font/roboto_medium"
         android:inputType="text|textPassword"
         android:maxLength="30"
@@ -192,10 +163,7 @@
         android:id="@+id/textView_reg_confirm_password"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-
         android:layout_marginTop="10dp"
-        android:layout_marginRight="16dp"
         android:fontFamily="@font/roboto_medium"
         android:text="@string/confirm_password"
         android:textAlignment="viewStart"
@@ -210,11 +178,8 @@
         android:id="@+id/editText_reg_confirm_password"
         android:layout_width="0dp"
         android:layout_height="40dp"
-        android:layout_marginLeft="16dp"
         android:layout_marginTop="10dp"
-        android:layout_marginRight="16dp"
-
-        android:background="@drawable/edit_text_background"
+        android:background="@drawable/corners_radius_background"
         android:fontFamily="@font/roboto_medium"
         android:inputType="text|textPassword"
         android:keepScreenOn="false"
@@ -233,9 +198,7 @@
         android:id="@+id/linearLayout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
         android:layout_marginTop="20dp"
-        android:layout_marginRight="16dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout_checkbox"
         app:layout_constraintEnd_toEndOf="parent"
@@ -275,56 +238,42 @@
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <LinearLayout
-        android:id="@+id/linearLayout_checkbox"
+    <CheckBox
+        android:id="@+id/checkBox_reg_news_promotions"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="16dp"
-        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/roboto_medium"
+        android:padding="0dp"
+        android:paddingLeft="10dp"
+        android:text="@string/news_and_promotions"
+        android:textColor="@color/white"
+        android:textSize="12sp"
         app:layout_constraintBottom_toTopOf="@+id/button_create_account"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
-        <CheckBox
-            android:id="@+id/checkBox_reg_news_promotions"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:backgroundTint="@color/grey_black"
-            android:checked="false"
-            android:gravity="center" />
+    </CheckBox>
 
-        <TextView
-            android:id="@+id/textView_reg_news_promotions"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:fontFamily="@font/roboto_medium"
-            android:paddingLeft="10dp"
-            android:text="@string/news_and_promotions"
-            android:textColor="@color/white"
-            android:textSize="12sp" />
-    </LinearLayout>
 
     <Button
         android:id="@+id/button_create_account"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
 
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="35dp"
-        android:layout_marginRight="16dp"
+        android:layout_marginTop="30dp"
         android:backgroundTint="@color/green"
+        android:fontFamily="@font/roboto_medium"
         android:text="@string/create_account"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="14sp"
         app:cornerRadius="13sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout_checkbox" />
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_reg_news_promotions" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

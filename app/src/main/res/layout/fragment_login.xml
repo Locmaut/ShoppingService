@@ -3,38 +3,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:background="@color/black"
-    tools:context=".LoginActivity">
-
-
-    <Button
-        android:id="@+id/button_continue_with_google"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="16dp"
-        android:backgroundTint="@color/black"
-        android:text="@string/continue_with_google"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="14sp"
-        app:cornerRadius="13sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_or"
-        app:strokeColor="@color/white"
-        app:strokeWidth="3sp" />
+    tools:context=".LoginFragment">
 
     <TextView
         android:id="@+id/textView_login"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
 
-        android:layout_marginLeft="16sp"
         android:layout_marginTop="50dp"
-        android:layout_marginRight="16sp"
         android:fontFamily="@font/roboto_medium"
         android:text="@string/login"
         android:textAlignment="center"
@@ -49,11 +27,8 @@
         android:id="@+id/editText_login_phone_email"
         android:layout_width="0dp"
         android:layout_height="40dp"
-        android:layout_marginLeft="16dp"
         android:layout_marginTop="30dp"
-        android:layout_marginRight="16dp"
-
-        android:background="@drawable/edit_text_background"
+        android:background="@drawable/corners_radius_background"
         android:fontFamily="@font/roboto_medium"
         android:hint="@string/login_phone_email"
         android:inputType="text"
@@ -72,11 +47,8 @@
         android:id="@+id/editText_login_password"
         android:layout_width="0dp"
         android:layout_height="40dp"
-        android:layout_marginLeft="16dp"
         android:layout_marginTop="20dp"
-
-        android:layout_marginRight="16dp"
-        android:background="@drawable/edit_text_background"
+        android:background="@drawable/corners_radius_background"
         android:fontFamily="@font/roboto_medium"
         android:hint="@string/password"
         android:inputType="text|textPassword"
@@ -95,13 +67,9 @@
         android:id="@+id/textView_forgot_your_password"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
         android:layout_marginTop="10dp"
-        android:layout_marginRight="16dp"
-        android:clickable="true"
-
-        android:focusable="true"
         android:fontFamily="@font/roboto_medium"
+        android:singleLine="true"
         android:text="@string/login_forgot_your_password"
         android:textAlignment="viewEnd"
         android:textColor="@color/grey"
@@ -115,11 +83,9 @@
         android:id="@+id/button_log_in"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-
-        android:layout_marginLeft="16dp"
         android:layout_marginTop="20dp"
-        android:layout_marginRight="16dp"
         android:backgroundTint="@color/green"
+        android:fontFamily="@font/roboto_medium"
         android:text="@string/log_in"
         android:textColor="@color/white"
         android:textSize="14sp"
@@ -133,9 +99,7 @@
         android:id="@+id/textView_or"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
         android:layout_marginTop="20dp"
-        android:layout_marginRight="16dp"
         android:text="@string/or"
         android:textAlignment="center"
         android:textColor="@color/grey"
@@ -144,5 +108,22 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_log_in" />
+
+    <Button
+        android:id="@+id/button_continue_with_google"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/black"
+        android:fontFamily="@font/roboto_medium"
+        android:foreground="@drawable/button_white_stroke_foreground"
+        android:text="@string/continue_with_google"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_or" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -34,44 +34,31 @@
             android:layout_marginTop="20dp"
             android:orientation="horizontal"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            app:layout_constraintBottom_toTopOf="@+id/ConstraintLayout_home_premium_ads"
+            app:layout_constraintBottom_toTopOf="@+id/button_home_premium_ads"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView_home_categories_title"
             tools:itemCount="13" />
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/ConstraintLayout_home_premium_ads"
+        <Button
+            android:id="@+id/button_home_premium_ads"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+
+
+            android:layout_marginTop="30dp"
+            android:background="@android:color/transparent"
+            android:drawableRight="@drawable/arrow_24px"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="center|start"
+            android:padding="0dp"
+            android:text="@string/premium_ads"
+            android:textSize="24sp"
+            app:iconPadding="0dp"
             app:layout_constraintBottom_toTopOf="@+id/recyclerView_home_premium_ads"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/recyclerView_home_categories">
-
-            <TextView
-                android:id="@+id/textView_home_premium_ads_title"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:text="@string/premium_ads"
-                android:textColor="@color/white"
-                android:textSize="24sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/imageView_icon_premium_ads"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <ImageView
-                android:id="@+id/imageView_icon_premium_ads"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/textView_home_premium_ads_title"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/arrow_24px" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
+            app:layout_constraintTop_toBottomOf="@+id/recyclerView_home_categories" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerView_home_premium_ads"
@@ -84,7 +71,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/ConstraintLayout_home_premium_ads" />
+            app:layout_constraintTop_toBottomOf="@+id/button_home_premium_ads" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
